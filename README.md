@@ -33,6 +33,8 @@ Time estimate: 7 minutes.
   5. "Forgot password" link
 3. Add a background image to the page.
 
+Here is an example of how this could look when you are done:
+![Example Finished Page](https://raw.githubusercontent.com/BuildingIntelligence/challenges/master/loginpage/public/img/goal.jpg)
 
 ## Step 2: Javascript Validation
 
