@@ -21,6 +21,15 @@ necessary (may significantly increase the time required).
 
 Your code need only work in either Chrome or Firefox.
 
+## Requirements
+
+For this challenge, you will need:
+
+* Ruby, version 1.9.3 or better. [RVM](http://rvm.io/) perhaps.
+* A text editor.  Perhaps [Sublime](http://www.sublimetext.com/).
+* Chrome or Firefox.
+* The Internet (for installing gems and referencing documentation).
+
 
 ## Getting Started
 
