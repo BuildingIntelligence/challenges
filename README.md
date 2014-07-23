@@ -57,8 +57,7 @@ Time estimate: 20 minutes.
 
 
 Here is an example of how this could look when you are done:
-
-![Example Finished Page](https://raw.githubusercontent.com/BuildingIntelligence/challenges/master/loginpage/public/img/Blue_sky_and_green_grass-wide.jpg)
+![Example Finished Page](https://raw.githubusercontent.com/BuildingIntelligence/challenges/master/loginpage/public/img/goal.jpg)
 
 
 Extra Credit:
@@ -67,8 +66,6 @@ Extra Credit:
 * Using only CSS, add more contrast by darkening the background image and using a bright foreground color.
 
 
-Here is an example of how this could look when you are done:
-![Example Finished Page](https://raw.githubusercontent.com/BuildingIntelligence/challenges/master/loginpage/public/img/goal.jpg)
 
 ## Step 2: Javascript Validation
 
