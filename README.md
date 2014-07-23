@@ -15,8 +15,10 @@ The first challenge is to implement a simple login page.  In this challenge you 
 
 In your local copy of the project, install the gems and run the server:
 
-> bundle install
-> rackup -p3000
+```
+bundle install
+rackup -p3000
+```
 
 ## Step 1: Markup
 

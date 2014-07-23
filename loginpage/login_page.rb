@@ -8,7 +8,13 @@ class LoginPage < Sinatra::Base
 	end
 
 	post('/login') do
-		puts params[:email]
-		puts params[:password]
+		puts "   Email: #{params[:email]}"
+		puts "Password: #{params[:password]}"
+
+		if true
+			[200, "success"]
+		else
+			[400, "failure"]
+		end
 	end
 end
