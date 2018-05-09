@@ -20,6 +20,10 @@ $(document).ready(function() {
         method: method,
         data: data
       }).done(function(response) {
+        $('#login-username').removeClass('error');
+        $('#login-password').removeClass('error');
+        $('#username-feedback').addClass('hidden');
+        $('#password-feedback').addClass('hidden');
         $('#login-description').replaceWith(response);
       });
     }
