@@ -7,9 +7,12 @@
 	<title>Login Page</title>
 
 	<!-- Bootstrap -->
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
 
 	<!-- Put all your CSS in an external CSS file -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Montserrat">
 	<link rel="stylesheet" type="text/css" href="/css/app.css">
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -21,24 +24,60 @@
 </head>
 <body>
 
+<div >
 
-<h1>Big Title Heading For This Page</h1>
+<div class="container d-flex justify-content-center align-items-center flex-column">
+    <div class="align-items-center justify-content-center title-container ">
+        <h1>the shops at columbus circle</h1>
+        <h2>Tenant Portal</h2>
+    </div>
 
-<p>Subtitle Goes Here</p>
+    <div class="login-container justify-content-center">
+        <p id="login-description">
+            Welcome, please log in with your store login and password, provided to you during orientation.
+        </p>
 
-<p>Add Welcome message/instructions here. Cow beef drumstick ball tip. Kielbasa pastrami flank ribeye pig chicken bacon kevin. Prosciutto ham t-bone kielbasa jerky salami pig jowl drumstick tongue bacon biltong pastrami. Pastrami short ribs pancetta, spare ribs swine bacon beef drumstick shankle landjaeger ground round bresaola pig turkey ball tip. Fatback biltong ham hock shoulder.</p>
+        <form id="login-form" action="/login" method="post" novalidate>
+					<div class="field-container d-flex flex-wrap justify-content-between">
+						<div class="username d-flex flex-column">
+                <input id="login-username" type="text" class="form-input" name="email" placeholder="store login" required>
+								<label><input type="checkbox">Remember Me</label>
+								<div id="username-feedback" class="error-font hidden">Please provide your username.</div>
+            </div>
 
-<p>[Replace this paragraph with the login form]</p>
+            <div class="password d-flex flex-column">
+                <input id="login-password" type="password" class="form-input" placeholder="password" required name="password">
+                <a href="/forgot_password">Forgot Password?</a>
+								<div id="password-feedback" class="error-font hidden">Please provide your password.</div>
+								
+            </div>
 
-<p>Use this image as the background: <img src="/img/Blue_sky_and_green_grass-wide.jpg" style="max-width:200px;"></p>
+            <div class="submit d-flex flex-column">
+                <input class="submit-button btn btn-primary" type="submit" value="sign in">
+            </div>
+					</div>
+            
 
-<p>Add a footer here with copyright or "call-for-support" message.</p>
+        </form>
+
+    </div>
+    
+
+</div>
+
+<div class="footer-wrap">
+		<div class="footer">If you are a new tenant and need an account, please contact the Retail Management office at 212-321-4567
+		</div>
+</div>
+
+
 
 
 <!-- Load all that javascript -->
 <!-- jquery and bootstrap are included here for convenience but are not necessary. -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 <!-- Put all your code in an external JS file -->
 <script type="text/javascript" src="/js/app.js"></script>
