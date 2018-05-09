@@ -1,0 +1,138 @@
+html {
+  width: 100%;
+}
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/Blue_sky_and_green_grass-wide.jpg') no-repeat center 80% fixed;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.justify-content-center {
+  text-align: center;
+}
+
+.container {
+  width: 75%;
+  font-family: 'Montserrat', serif;
+  font-weight: 600;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 40px);
+}
+
+.title-container {
+  color: white;
+}
+
+.title-container h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3em;
+}
+
+.login-container {
+  color: white;
+  margin-top: 2%;
+  width: 95%;
+}
+
+.field-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 90%;
+}
+
+.username {
+  flex: 4;
+  padding-right: 1%;
+}
+
+.password {
+  flex: 3;
+
+  padding-right: 1%;
+}
+
+.password a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: #7fdbff;
+
+  font-weight: 700;
+}
+
+.submit {
+  flex: 2;
+
+  padding: auto;
+}
+
+.username label {
+  align-self: flex-end;
+}
+
+input {
+  box-sizing: border-box;
+  font-size: 20px;
+  border: 1px solid gray;
+}
+
+.footer-wrap {
+  position: absolute;
+  display: flex;
+  height: 40px;
+  width: 90%;
+  margin-left: 5%;
+  left: 0;
+  justify-content: space-around;
+  color: white;
+}
+
+.footer {
+  flex: 1;
+  text-align: center;
+}
+.error {
+  border: 1px solid #ff4136;
+}
+
+.error-font {
+  color: #ff4136;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .field-container {
+    width: 100%;
+  }
+
+  .title-container h1 {
+    font-size: 2em;
+  }
+
+  .username {
+    padding: 0;
+  }
+
+  .password {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .title-container h1 {
+    font-size: 1.5em;
+  }
+
+  .title-container h2 {
+    font-size: 1.4em;
+  }
+}
