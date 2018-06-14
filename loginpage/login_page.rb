@@ -8,13 +8,16 @@ class LoginPage < Sinatra::Base
 	end
 
 	post('/login') do
-		puts "   Email: #{params[:email]}"
-		puts "Password: #{params[:password]}"
-
-		if true
+		if (user_params["email"] == "admin@example.com" && user_params["password"] == "password123")
 			[200, "success"]
 		else
 			[400, "failure"]
 		end
 	end
+
+end
+
+def user_params
+  permitted_fields = ["email", "password"]
+  params["user"].select {|k,v| permitted_fields.include?(k)}
 end

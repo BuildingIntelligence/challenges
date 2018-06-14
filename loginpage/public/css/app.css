@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  color: #eeeeee;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*pushes footer to bottom */
+}
+
+.bg {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Blue_sky_and_green_grass-wide.jpg");
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+main {
+  height: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+summary {
+  font-size: 16px;
+}
+
+#form-box {
+  margin-top: 40px;
+}
+
+#user-message {
+  margin-bottom: 10px;
+}
+
+/* Various tweaks to bootsrap for the form */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inline .form-group{
+  vertical-align: top;
+}
+
+.right {
+  float: right;
+}
+
+.form-check {
+  margin-top: 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: #00dd00;
+}
