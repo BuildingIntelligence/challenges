@@ -5,17 +5,10 @@ $("#login-form").on("submit", (e)=> {
   $("#emailInput, #passwordInput").each((index, input) => {
     input = $(input);
     if (input.val() === "") {
-      input.parent().addClass("has-error has-feedback"); //use bootsrap error css
-      $(`#${input.attr("id")}Glyph`).removeClass("hidden"); //make alert glyph visible
-      input.attr("placeholder", "Field cannot be empty"); //use placeholder to message user
-      inputErrorBlink(input); //briefly set border of input to bright red
+      inputError(input, "Field cannot be empty");
       noEmptyFields = false;
     } else if (input.attr("id") === "emailInput" && !emailRegex(input.val())) {
-      input.parent().addClass("has-error has-feedback");
-      input.val("");
-      $(`#${input.attr("id")}Glyph`).removeClass("hidden");
-      input.attr("placeholder", "Must enter a valid email");
-      inputErrorBlink(input);
+      inputError(input, "Muset enter a valid email");
       noEmptyFields = false;
     } else {
       let placeholder = input.attr("id") === "emailInput" ? "Email" : "Password";
@@ -38,6 +31,14 @@ $("#login-form").on("submit", (e)=> {
 const emailRegex = (str) => {
   // Borrowed from http://emailregex.com/
   return str.match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
+};
+
+const inputError = (input, message) => {
+  input.parent().addClass("has-error has-feedback"); //use bootsrap error css
+  input.val("");
+  $(`#${input.attr("id")}Glyph`).removeClass("hidden"); //make alert glyph visible
+  input.attr("placeholder", message); //use placeholder to message user
+  inputErrorBlink(input); //briefly set border of input to bright red
 };
 
 const inputErrorBlink = (input) => {
