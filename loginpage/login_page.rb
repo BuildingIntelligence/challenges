@@ -15,9 +15,9 @@ class LoginPage < Sinatra::Base
 		end
 	end
 
-end
+  def user_params
+    permitted_fields = ["email", "password"]
+    params["user"].select {|k,v| permitted_fields.include?(k)}
+  end
 
-def user_params
-  permitted_fields = ["email", "password"]
-  params["user"].select {|k,v| permitted_fields.include?(k)}
 end

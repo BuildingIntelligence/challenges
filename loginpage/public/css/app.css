@@ -73,3 +73,7 @@ summary {
 .green {
   color: #00dd00;
 }
+
+.flash-error {
+  border-color: #ff0000 !important;
+}
