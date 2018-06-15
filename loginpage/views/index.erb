@@ -43,11 +43,13 @@
 
       <form id="login-form" class="form-inline" action="/login" method="post">
         <div class="form-group column" id="emailInputContainer">
-          <input type="email" class="form-control" id="emailInput" placeholder="Email">
+          <label class="sr-only" for="emailInput"></label>
+          <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
           <span id="emailInputGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback hidden"></span>
         </div>
         <div class="form-group column" id="passwordInputContainer">
           <div class="">
+            <label class="sr-only" for="passwordInput"></label>
             <input type="password" class="form-control" id="passwordInput" placeholder="Password">
             <span id="passwordInputGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback hidden"></span>
           </div>
