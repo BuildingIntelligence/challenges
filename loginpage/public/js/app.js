@@ -1,3 +1,7 @@
+setTimeout(()=> {
+  $("#body").addClass("opaque darken");
+},0);
+
 $("#login-form").on("submit", (e)=> {
   e.preventDefault();
   let noEmptyFields = true;
