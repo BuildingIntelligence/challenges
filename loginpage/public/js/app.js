@@ -9,13 +9,15 @@ $("#login-form").on("submit", (e)=> {
       $(`#${input.attr("id")}Glyph`).removeClass("hidden"); //make alert glyph visible
       input.attr("placeholder", "Field cannot be empty"); //use placeholder to message user
       noEmptyFields = false;
-    } else if (input.attr("id") == "emailInput" && !emailRegex(input.val())) {
+    } else if (input.attr("id") === "emailInput" && !emailRegex(input.val())) {
       input.parent().addClass("has-error has-feedback");
       input.val("");
       $(`#${input.attr("id")}Glyph`).removeClass("hidden");
       input.attr("placeholder", "Must enter a valid email");
       noEmptyFields = false;
     } else {
+      let placeholder = input.attr("id") === "emailInput" ? "Email" : "Password";
+      input.attr("placeholder", placeholder);
       input.parent().removeClass("has-error has-feedback");
       $(`#${input.attr("id")}Glyph`).addClass("hidden");
       input.attr("placeholder", ""); //reset any previous error messages
