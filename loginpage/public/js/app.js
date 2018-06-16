@@ -12,7 +12,7 @@ $("#login-form").on("submit", (e)=> {
       inputError(input, "Field cannot be empty");
       noEmptyFields = false;
     } else if (input.attr("id") === "emailInput" && !emailRegex(input.val())) {
-      inputError(input, "Muset enter a valid email");
+      inputError(input, "Must enter a valid email");
       noEmptyFields = false;
     } else {
       let placeholder = input.attr("id") === "emailInput" ? "Email" : "Password";
