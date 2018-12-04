@@ -5,7 +5,7 @@ A collection of simple challenges to demonstrate developer skill and resourceful
 So far in the collection there is only one challenge: the Login Page.
 
 To submit your code, please create a zip file containing your submission and email it
-to travis@buildingintelligence.com.
+to dev-team@buildingintelligence.com.
 
 
 # Login Page
