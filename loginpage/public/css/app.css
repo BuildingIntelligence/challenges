@@ -1,0 +1,91 @@
+html, body {
+  height: 100%;
+  color: #eeeeee;
+  text-align: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /*pushes footer to bottom */
+  opacity: 0;
+  transition: box-shadow 1s linear;
+  transition: opacity 1s linear;
+}
+
+.opaque {
+  opacity: 1;
+}
+
+
+.bg {
+    background: url("/img/Blue_sky_and_green_grass-wide.jpg");
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.darken {
+  box-shadow: inset 9999px 9999px rgba(0,0,0,0.50);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/Blue_sky_and_green_grass-wide.jpg"); */
+}
+
+.upcase {
+  text-transform: uppercase;
+}
+
+main {
+  height: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+summary {
+  font-size: 16px;
+}
+
+#form-box {
+  margin-top: 40px;
+}
+
+#user-message {
+  margin-bottom: 10px;
+}
+
+/* Various tweaks to bootsrap for the form */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-inline .form-group{
+  vertical-align: top;
+}
+
+.right {
+  float: right;
+}
+
+.form-check {
+  margin-top: 5px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.red {
+  color: red;
+}
+
+.green {
+  color: #00dd00;
+}
+
+.flash-error {
+  border-color: #ff0000 !important;
+}

@@ -19,29 +19,70 @@
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body id="body" class="bg">
+
+  <main class="container">
+
+    <section>
+      <header class="upcase">
+        <h1>Welcome to Micrsoft's Github XP</h1>
+      </header>
+
+      <h3>Things Just Got Worse</h3>
+
+      <summary>
+        Please bear with us while we learn latin. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non metus eget tellus eleifend convallis ac et eros. Nunc scelerisque pulvinar egestas. Vivamus feugiat nunc placerat, finibus urna non, vehicula purus.
+      </summary>
+    </section>
+
+    <section id="form-box">
+
+      <div id="user-message" class="hidden">
+
+      </div>
+
+      <form id="login-form" class="form-inline" action="/login" method="post">
+        <div class="form-group column" id="emailInputContainer">
+          <label class="sr-only" for="emailInput"></label>
+          <input type="email" class="form-control" id="emailInput" placeholder="Enter email">
+          <span id="emailInputGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback hidden"></span>
+        </div>
+        <div class="form-group column" id="passwordInputContainer">
+          <div class="">
+            <label class="sr-only" for="passwordInput"></label>
+            <input type="password" class="form-control" id="passwordInput" placeholder="Password">
+            <span id="passwordInputGlyph" class="glyphicon glyphicon-warning-sign form-control-feedback hidden"></span>
+          </div>
+          <div class="right">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="rememberMeCheck">
+            <label class="form-check-label" for="rememberMeCheck">Remember me</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Call for emotional support at (775) 784-8090</p>
+  </footer>
 
 
-<h1>Big Title Heading For This Page</h1>
+  <!-- Load all that javascript -->
+  <!-- jquery and bootstrap are included here for convenience but are not necessary. -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
-<p>Subtitle Goes Here</p>
-
-<p>Add Welcome message/instructions here. Cow beef drumstick ball tip. Kielbasa pastrami flank ribeye pig chicken bacon kevin. Prosciutto ham t-bone kielbasa jerky salami pig jowl drumstick tongue bacon biltong pastrami. Pastrami short ribs pancetta, spare ribs swine bacon beef drumstick shankle landjaeger ground round bresaola pig turkey ball tip. Fatback biltong ham hock shoulder.</p>
-
-<p>[Replace this paragraph with the login form]</p>
-
-<p>Use this image as the background: <img src="/img/Blue_sky_and_green_grass-wide.jpg" style="max-width:200px;"></p>
-
-<p>Add a footer here with copyright or "call-for-support" message.</p>
-
-
-<!-- Load all that javascript -->
-<!-- jquery and bootstrap are included here for convenience but are not necessary. -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-<!-- Put all your code in an external JS file -->
-<script type="text/javascript" src="/js/app.js"></script>
+  <!-- Put all your code in an external JS file -->
+  <script type="text/javascript" src="/js/app.js"></script>
 
 </body>
 </html>
